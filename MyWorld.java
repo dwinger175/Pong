@@ -19,6 +19,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -26,17 +27,18 @@ public class MyWorld extends World
     private void prepare()
     {
         Pad1 pad1 = new Pad1();
-        addObject(pad1,97,215);
+        addObject(pad1,25,215);
         Pad2 pad2 = new Pad2();
-        addObject(pad2,505,223);
+        addObject(pad2,575,223);
         Ball ball2 = new Ball();
-        addObject(ball2,282,215);
+        addObject(ball2,getWidth() / 2, getHeight() / 2);
+        mid mid = new mid();
+        addObject(mid,299,169);
     }
     
-    public void checkBall () 
+    public void checkWin () 
     {
-        
-        
+
         
         
         

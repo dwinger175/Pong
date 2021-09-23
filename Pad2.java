@@ -23,14 +23,14 @@ public class Pad2 extends Actor
         
         if(Greenfoot.isKeyDown("up"))
         {
-            move(2);
+            move(3);
             
         }
         
         
         if(Greenfoot.isKeyDown("down"))
         {
-            move(-2);
+            move(-3);
             
         }
         
