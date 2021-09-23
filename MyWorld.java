@@ -29,7 +29,20 @@ public class MyWorld extends World
         addObject(pad1,97,215);
         Pad2 pad2 = new Pad2();
         addObject(pad2,505,223);
-        Ball ball = new Ball();
-        addObject(ball,282,215);
+        Ball ball2 = new Ball();
+        addObject(ball2,282,215);
     }
+    
+    public void checkBall () 
+    {
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
 }
