@@ -13,7 +13,7 @@ public class Ball extends Actor
     public int  lWin = 0;   
     public int  rWin = 0; 
     private int bounce = 1;
-    
+    private GreenfootImage win = new GreenfootImage("R.png");
     
     /**
      * Act - do whatever the Ball wants to do. This method is called whenever
@@ -117,8 +117,8 @@ public class Ball extends Actor
         if (lWin ==8)
         {
             
-            
-            
+            setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
+            setImage(win);
             Greenfoot.stop();
             
         }
@@ -127,7 +127,15 @@ public class Ball extends Actor
         {
             
             
+            
+            setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
+            setImage(win);
+            
             Greenfoot.stop();
+            
+            
+            
+            
             
         }
         
