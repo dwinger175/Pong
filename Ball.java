@@ -50,7 +50,7 @@ public class Ball extends Actor
         {
             
             dY = -dY;
-             
+             turn(60);
         }
         
         
@@ -62,7 +62,7 @@ public class Ball extends Actor
             Greenfoot.playSound("button-10.wav");  
             dX = -dX;
             bounce = 0;
-            
+            turn(60);
             change();  
               }
             
@@ -76,7 +76,7 @@ public class Ball extends Actor
             Greenfoot.playSound("button-10.wav");  
             dX = -dX;
             bounce = 0;
-            
+            turn(60);
             change();  
               }
         }
@@ -93,8 +93,9 @@ public class Ball extends Actor
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
             lWin++;
+            Greenfoot.playSound("button-37a.wav"); 
             Greenfoot.delay(200);
-            
+             
         }
         
         if(getX() >= getWorld().getWidth() -1 )
@@ -103,6 +104,7 @@ public class Ball extends Actor
             
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
+            Greenfoot.playSound("button-37a.wav");  
             rWin++;
             Greenfoot.delay(200);  
             
