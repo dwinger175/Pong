@@ -26,25 +26,17 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        Pad1 pad1 = new Pad1();
-        addObject(pad1,25,215);
-        Pad2 pad2 = new Pad2();
-        addObject(pad2,575,223);
+
         Ball ball2 = new Ball();
         addObject(ball2,getWidth() / 2, getHeight() / 2);
         mid mid = new mid();
-        addObject(mid,299,169);
+        addObject(mid,getWidth() / 2,169);
+        Pad1 pad1 = new Pad1("w", "s");
+        addObject(pad1,getWidth() + 15 ,getHeight() / 2);
+        pad1.setLocation(28,200);
+        Pad1 pad12 = new Pad1("up", "down");
+        addObject(pad12,getWidth() - 25,getHeight() / 2);
     }
     
-    public void checkWin () 
-    {
-
-        
-        
-        
-    }
-    
-    
-    
-    
+   
 }

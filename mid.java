@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class mid extends Actor
 {
     /**
-     * Act - do whatever the mid wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Exists to stop sticky paddle by only allowing ball to bounce once
+     * 
      */
     public void act()
     {

@@ -28,12 +28,25 @@ public class Ball extends Actor
         
     }
     
+    
+    
+    /**
+     *
+     * Balls movement pattern
+     */
     public void change()
     {
         setLocation(getX() + dX ,getY() + dY );
         
         
     }
+    
+    /**
+     * Checks if  touching paddle or horizontal walls, if so reverse movement "Bounce" 
+     * Check if touching middle, if so allow bounce
+     */
+    
+    
     public void checkForBounce()
     {
          if (isTouching(mid.class)){
@@ -59,52 +72,43 @@ public class Ball extends Actor
             if (bounce == 1){
             
                 
-            Greenfoot.playSound("button-10.wav");  
+            Greenfoot.playSound("paddleHit.wav");  
             dX = -dX;
             bounce = 0;
-            turn(60);
             change();  
               }
             
             
         }
         
-         if(isTouching(Pad2.class )){
-            
-            if (bounce == 1){
-            
-            Greenfoot.playSound("button-10.wav");  
-            dX = -dX;
-            bounce = 0;
-            turn(60);
-            change();  
-              }
-        }
-        
-        
+      
         
     }
+    /**
+     * Checks if touching x edge, if so Playsound, give point to correct side, move ball to center, and delay the game
+     * 
+     */
+    
     public void checkForEdge() 
     {
          if (getX() <= 1)
         {
+            Greenfoot.playSound("pointScore.wav");
             getWorld();
-            
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
             lWin++;
-            Greenfoot.playSound("button-37a.wav"); 
             Greenfoot.delay(200);
              
         }
         
         if(getX() >= getWorld().getWidth() -1 )
         {
-            getWorld();
+            Greenfoot.playSound("pointScore.wav");
             
+            getWorld();
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
-            Greenfoot.playSound("button-37a.wav");  
             rWin++;
             Greenfoot.delay(200);  
             
@@ -113,7 +117,10 @@ public class Ball extends Actor
 
         
     }
-    
+    /**
+     *   Checks how many points each side has, if it is equal to 8, change ball to win sign and end game
+     * 
+     */
     public void checkWin() 
     {
         if (lWin ==8)

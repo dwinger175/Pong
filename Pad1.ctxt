@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Pad1
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pad1\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Pad1\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.params=uKeyPress\ dKeyPress
+comment1.target=Pad1(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ \ Initialize\ variables\ upon\ placement\ in\ the\ world\r\n\ \r\n
 comment2.params=
-comment2.target=void\ control()
-numComments=3
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Pad1\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ control()
+comment3.text=\r\n\r\n\ Use\ specific\ keys\ to\ move\ paddle\ up\ and\ down\r\n
+numComments=4
