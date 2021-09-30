@@ -30,7 +30,7 @@ public class MyWorld extends World
         Ball ball2 = new Ball();
         addObject(ball2,getWidth() / 2, getHeight() / 2);
         mid mid = new mid();
-        addObject(mid,getWidth() / 2,169);
+        addObject(mid,getWidth() / 2, getHeight() / 2);
         Pad1 pad1 = new Pad1("w", "s");
         addObject(pad1,getWidth() + 15 ,getHeight() / 2);
         pad1.setLocation(28,200);

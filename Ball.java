@@ -63,7 +63,7 @@ public class Ball extends Actor
         {
             
             dY = -dY;
-             turn(60);
+             
         }
         
         
