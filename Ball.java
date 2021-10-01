@@ -13,6 +13,9 @@ public class Ball extends Actor
     public int  lWin = 0;   
     public int  rWin = 0; 
     private int bounce = 1;
+    
+    private int wait = 0;
+    
     private GreenfootImage win = new GreenfootImage("R.png");
     
     /**
@@ -21,10 +24,25 @@ public class Ball extends Actor
      */
     public void act()
     {
-        change();
+         
+        if  (wait < 75)
+        {
+            wait = wait + 1;
+        }
+        
+        
+        
+        
+        
+        
+        if  (wait == 75)
+        {
+          change();
         checkForBounce();
         checkForEdge();
-        checkWin();
+        checkWin();  
+        }
+       
         
     }
     
@@ -93,24 +111,29 @@ public class Ball extends Actor
     {
          if (getX() <= 1)
         {
+            
+            
             Greenfoot.playSound("pointScore.wav");
             getWorld();
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
             lWin++;
-            Greenfoot.delay(200);
+            wait = 0;
              
         }
         
         if(getX() >= getWorld().getWidth() -1 )
         {
+            
+           
+            
             Greenfoot.playSound("pointScore.wav");
             
             getWorld();
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
             rWin++;
-            Greenfoot.delay(200);  
+            wait = 0;
             
             
         }
@@ -125,7 +148,7 @@ public class Ball extends Actor
     {
         if (lWin ==8)
         {
-            
+            Greenfoot.playSound("finalWin.wav");
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             setImage(win);
             Greenfoot.stop();
@@ -136,7 +159,7 @@ public class Ball extends Actor
         {
             
             
-            
+            Greenfoot.playSound("finalWin.wav");
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             setImage(win);
             
