@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.Ball.image=flowpow.png
+class.Ball.image=flower.png
 class.MyWorld.image=background1.png
 class.Pad1.image=car02.png
 class.mid.image=mid.png
@@ -18,10 +18,10 @@ dependency4.type=UsesDependency
 dependency5.from=Ball
 dependency5.to=Pad1
 dependency5.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
+editor.fx.0.height=735
+editor.fx.0.width=812
 editor.fx.0.x=552
-editor.fx.0.y=100
+editor.fx.0.y=104
 height=1047
 package.numDependencies=5
 package.numTargets=4

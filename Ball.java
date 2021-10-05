@@ -60,8 +60,8 @@ public class Ball extends Actor
     }
     
     /**
-     * Checks if  touching paddle or horizontal walls, if so reverse movement "Bounce" 
-     * Check if touching middle, if so allow bounce
+     * Checks if  touching paddle or horizontal walls, if so reverse movement
+     * "Bounce" Check if touching middle, if so allow bounce
      */
     
     
@@ -103,7 +103,8 @@ public class Ball extends Actor
         
     }
     /**
-     * Checks if touching x edge, if so Playsound, give point to correct side, move ball to center, and delay the game
+     * Checks if touching x edge, if so Playsound, give point to correct side,
+     * move ball to center, and delay the game
      * 
      */
     
