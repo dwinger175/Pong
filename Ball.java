@@ -115,10 +115,13 @@ public class Ball extends Actor
             
             
             Greenfoot.playSound("pointScore.wav");
-            getWorld();
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             dX = -dX;
             lWin++;
+            
+            MyWorld myWorld = (MyWorld) getWorld();
+            myWorld.score2();
+            
             wait = 0;
              
         }
@@ -126,7 +129,9 @@ public class Ball extends Actor
         if(getX() >= getWorld().getWidth() -1 )
         {
             
-           
+             MyWorld myWorld = (MyWorld) getWorld();
+            myWorld.score1();
+  
             
             Greenfoot.playSound("pointScore.wav");
             
@@ -153,6 +158,7 @@ public class Ball extends Actor
             setLocation(getWorld().getWidth() / 2, getWorld().getHeight() / 2);
             setImage(win);
             Greenfoot.stop();
+            
             
         }
         

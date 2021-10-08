@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=counterL
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ counterL\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=counterL()
+comment1.text=\r\n\ \r\n\ Assigns\ images\ to\ variables\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ counterL\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ addScore()
+comment3.text=\r\n\ \ Adds\ Points\r\n\ \r\n
+comment4.params=
+comment4.target=void\ update()
+comment4.text=\r\n\ Changes\ image\ to\ correct\ number\r\n\ \r\n
+numComments=5
