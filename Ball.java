@@ -8,15 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ball extends Actor
 {
-    private int dX = 3;
-    private int dY = 2;
+    private int dX = 4;
+    private int dY = 4;
     public int  lWin = 0;   
     public int  rWin = 0; 
     private int bounce = 1;
     
     private int wait = 0;
     
-    private GreenfootImage win = new GreenfootImage("R.png");
+    private GreenfootImage win = new GreenfootImage("Win1.png");
     
     /**
      * Act - do whatever the Ball wants to do. This method is called whenever
